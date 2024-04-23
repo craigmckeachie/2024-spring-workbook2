@@ -25,4 +25,9 @@ console.log("Hello World");
 `back-ticks`
 semiColon;
 hyphen-between-words-in-filenames
+     {
+    
+    code block
+    done with curly braces
+}
 ```
