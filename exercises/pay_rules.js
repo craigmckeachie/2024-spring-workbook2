@@ -1,4 +1,4 @@
-// declare variables
+"use strict";
 
 //Test 1
 // var hoursWorked = 20;
@@ -12,16 +12,18 @@
 var hoursWorked = 45;
 var payRate = 17.3;
 
-var regularHours = 40;
-var overtimeHours = hoursWorked - regularHours;
-var overtimePayRate = payRate * 1.5;
-var overtimePay = overtimePayRate * overtimeHours;
-var grossPay;
+var standardHours = 40;
+var overtimePayRateMultiplier = 1.5;
+var grossPay = 0;
 
-if (hoursWorked <= 40) {
+if (hoursWorked <= standardHours) {
   grossPay = payRate * hoursWorked;
 } else {
-  grossPay = payRate * regularHours + overtimePay;
+  var overtimeHoursWorked = hoursWorked - standardHours;
+  var overtimePayRate = payRate * overtimePayRateMultiplier;
+  var standardPay = payRate * standardHours;
+  var overtimePay = overtimeHoursWorked * overtimePayRate;
+  grossPay = standardPay + overtimePay;
 }
 
-console.log(grossPay);
+console.log(grossPay.toFixed(2));
