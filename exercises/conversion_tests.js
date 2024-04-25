@@ -10,11 +10,11 @@ var d = "Number 5 ";
 aResult = parseInt(a);
 console.log(aResult);
 
-bResult = parseInt(b);
+bResult = Number(b);
 console.log(bResult);
 
-cResult = parseInt(c);
+cResult = Number(c);
 console.log(cResult);
 
-dResult = parseInt(d);
+dResult = Number(d);
 console.log(dResult);
