@@ -1,11 +1,14 @@
-// //declare variables
+// declare variables
 
+//Test 1
 // var hoursWorked = 20;
 // var regularPayRate = 12.5;
 
-var hoursWorked = 40
+//Test 2
+var hoursWorked = 40;
 var regularPayRate = 25;
 
+//Test 3
 // var hoursWorked = 45;
 // var regularPayRate = 17.3;
 
