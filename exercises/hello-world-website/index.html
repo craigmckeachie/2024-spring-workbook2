@@ -6,11 +6,15 @@
     <title>Hello World Website</title>
   </head>
   <body>
-    <div id="messageDiv">test</div>
+    <div class="mt-2 uppercase active" id="messageDiv" style="background-color: red;">Julien</div>
 
     <script>
+      "use strict";
       var messageDiv = document.getElementById("messageDiv");
-      messageDiv.innerText = "Hello World";
+      // var messageDiv =  <div id="messageDiv">test</div>;
+      var originalText = messageDiv.innerText;
+      console.log(originalText);
+      messageDiv.innerText = "Khaleel"
     </script>
   </body>
 </html>
